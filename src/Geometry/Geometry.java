@@ -126,7 +126,19 @@ public class Geometry {
 		
 		// The method sortObjects(T[]) in the type Geometry is not applicable for the arguments (Shape[])
 		
+		Ring r1 = new Ring(a,3,5);
+		r1.print();
 		
+		double ringArea;
+		ringArea=r1.area();
+		System.out.println(ringArea);
+		
+		double ringPerimeter;
+		ringPerimeter=r1.perimeter();
+		System.out.println(ringPerimeter);
+		
+		Circle rc = r1;
+		System.out.println(rc.area());
 	}
 	
 	public static Circle largestCircle (Circle c[]) {

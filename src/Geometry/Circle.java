@@ -2,8 +2,8 @@ package Geometry;
 
 public class Circle implements Shape, Comparable<Circle>{
 	
-	private int radius;
-	private Point center;
+	protected int radius;
+	protected Point center;
 	
 	public Circle(int r,Point p) {
 		this.radius=r;
